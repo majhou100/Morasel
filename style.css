@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* الترويسة */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c62828;
+}
+
+/* قسم البطل */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: linear-gradient(rgba(198, 40, 40, 0.7), rgba(198, 40, 40, 0.7)),
+              url('../images/hero-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #c62828;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b71c1c;
+}
+
+/* النماذج */
+.form-section {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c62828;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-section .error {
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+.form-section .success {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* الملف الشخصي */
+.profile-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.badge.verified {
+  background-color: #c62828;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* لوحة الأدمن */
+.admin-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #c62828;
+  color: #fff;
+}
+
+/* الدردشة */
+.chat-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.chat-box {
+  border: 1px solid #ddd;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* استقبال الرسائل */
+.message-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* الذيل */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/* الوضع الليلي (اختياري) */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .header,
+.dark-mode .footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .nav-links a {
+  color: #fff;
+}
+
+.dark-mode .nav-links a:hover {
+  color: #c62828;
+}
